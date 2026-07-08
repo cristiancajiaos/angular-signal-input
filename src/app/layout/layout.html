@@ -1,1 +1,15 @@
-<p>layout works!</p>
+<button class="btn btn-primary" (click)="changeInput()">
+  Change input
+</button>
+
+<hr/>
+<div class="row">
+  <div class="col-12 col-lg-6">
+    <app-son [text]="sonText()" [number]="sonNumber()"></app-son>
+  </div>
+  <div class="col-12 col-lg-6">
+    <app-daughter (foo)="receiveFromDaughter($event)"></app-daughter>
+  </div>
+</div>
+
+
